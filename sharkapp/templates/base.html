@@ -1,0 +1,37 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Learn a Shark, Love a Shark</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel='stylesheet' type='text/css' href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header class='navbar-fixed'>
+        <nav>
+            <div class='nav-wrapper blue darken-1'>
+                <ul>
+                    <li><a href='/' class='brand-logo left'>
+                    <img src="{% static '/images/SharkLogo3.png' %}" alt='Shark Logo' height=50 width=55> Love A Shark
+                    </a></li>
+                </ul>
+                <ul class='right'>
+                    <li><a href='{% url 'index' %}'>All My Sharks</a></li>
+                    <li><a href="{% url 'sharks_create' %}">Add a Shark</a></li>
+                </ul>                
+            </div>
+        </nav>
+    </header>
+    <main class='container'>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer class='page-footer'>
+        
+    </footer>
+</body>
+</html>

@@ -1,0 +1,34 @@
+footer.page-footer{
+    background-image: url('../images/sandybottom.png');
+    height: 8vh;
+    padding-top: 0;
+    text-align: center;
+    opacity: 0.1;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    background-image: url('../images/WallpaperDog-5536952.jpg');
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+header {
+    opacity: 0.9;
+}
+
+.indexpic {
+    flex-shrink: 0;
+    height: 50%;
+    width: 50%;
+}
+
+/* .card {
+    display: flex;
+    min-height: 50vh;
+    flex-direction: row;
+} */
