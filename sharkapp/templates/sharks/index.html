@@ -5,15 +5,17 @@
 <h1>SHARKS IN THE WATER!!</h1>
 
 {% for shark in sharks %}
-    <div class='card small'>
-        <a href="{% url 'detail' shark.id %}">
-            <div class='card-image'>
-                <img class='indexpic' src="{{shark.image}}" alt="Picture of {{shark.species}} Shark">
-            </div>
-            {% comment %} <div class='card-content'>
+    <div class='col s5'>
+        <div class='card-panel blue darken-3'>
+            <a href="{% url 'detail' shark.id %}">
+                <div class='card-image'>
+                    <img class='responsive-img' src="{{shark.image}}" alt="Picture of {{shark.species}} Shark">
+                </div>
+                {% comment %} <div class='card-content'>
                 <span class='card-title'>{{shark.species}}</span>
-            </div> {% endcomment %}
-        </a>
+                </div> {% endcomment %}
+            </a>
+        </div>
     </div>
 {% endfor %}
 

@@ -20,8 +20,16 @@
                     </a></li>
                 </ul>
                 <ul class='right'>
-                    <li><a href='{% url 'index' %}'>All My Sharks</a></li>
-                    <li><a href="{% url 'sharks_create' %}">Add a Shark</a></li>
+                    {% if user.is_authenticated %}
+                        <li><a href='{% url 'index' %}'>All My Sharks</a></li>
+                        <li><a href="{% url 'sharks_create' %}">Add a Shark</a></li>
+                        <li><a href="{% url 'sightings_index' %}">See All Sighting</a></li>
+                        <li><a href="{% url 'sightings_create' %}">Add a Sighting</a></li>
+                        <li><a href="{% url 'logout' %}">Logout</a></li>
+                    {% else %}
+                        <li><a href="{% url 'signup' %}">Signup</a></li>
+                        <li><a href="{% url 'login' %}">Login</a></li>
+                    {% endif %}
                 </ul>                
             </div>
         </nav>

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>All Sightings</h2>
+
+{% for sighting in sighting_list %}
+    <a href="{% url 'sightings_detail' sighting.id %}">
+        <div class='card'>
+            <div class='card-content'>
+                <span class='card-title'>{{sighting.shark_species}} at {{sighting.beach_name}}</span>
+            </div>
+        </div>
+    </a>
+{% endfor %}
+
+{% endblock %}

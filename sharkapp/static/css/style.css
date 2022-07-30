@@ -11,8 +11,12 @@ body {
     min-height: 100vh;
     flex-direction: row;
     background-image: url('../images/WallpaperDog-5536952.jpg');
+    color: green;
 }
 
+form{
+    color: green;
+}
 main {
     flex: 1 0 auto;
 }
@@ -21,10 +25,10 @@ header {
     opacity: 0.9;
 }
 
-.indexpic {
+.card-index {
     flex-shrink: 0;
-    height: 50%;
-    width: 50%;
+    height: 100%;
+    width: 100%;
 }
 
 /* .card {
