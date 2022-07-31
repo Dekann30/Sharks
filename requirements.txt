@@ -1,12 +1,10 @@
 asgiref==3.5.2
 attrs==19.3.0
 Automat==0.8.0
-backports.zoneinfo==0.2.1
 blinker==1.4
 certifi==2019.11.28
 chardet==3.0.4
 Click==7.0
-cloud-init==22.2
 colorama==0.4.3
 command-not-found==0.3
 configobj==5.0.6
@@ -59,6 +57,7 @@ python-apt==2.0.0+ubuntu0.20.4.7
 python-debian===0.1.36ubuntu1
 python-jsonrpc-server==0.4.0
 python-language-server==0.36.2
+PyYAML==5.3.1
 requests==2.22.0
 requests-unixsocket==0.2.0
 SecretStorage==2.3.1
