@@ -1,1 +1,1 @@
-web gunicorn SharkLove.wsgi
+web: gunicorn SharkLove.wsgi
