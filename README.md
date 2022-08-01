@@ -4,9 +4,9 @@ ___
 
 Sharks are some of the most feared but ***misunderstood*** animals in the world. Learn-A-Shark, Love-A-Shark aims to educate it's visitors about the various sharks in our oceans and their various traits. Visitors can also login to the site to log shark sightings for everyone to see. 
 
-[Sharks!](/sharkapp/static/images/Screenshot%202022-07-30%20074349.png 'Website Preview')
+![Sharks!](/sharkapp/static/images/Screenshot%202022-07-30%20074349.png 'Website Preview')
 
-![Live Site!!](https://dksharkapp.herokuapp.com/sharks/)
+[Live Site!!](https://dksharkapp.herokuapp.com/sharks/)
 ___
 
 See the [Trello Board](https://trello.com/b/h1TtgW5l/love-a-shark) for the User Stories
